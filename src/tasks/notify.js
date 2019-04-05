@@ -1,4 +1,3 @@
-
 'use strict'
 
 const _ = require('lodash')
@@ -13,7 +12,7 @@ bot.configureIncomingWebhook({ url: config('WEBHOOK_URL') })
 
 const msgDefaults = {
   response_type: 'in_channel',
-  username: 'Starbot',
+  username: 'Bugs-Bot',
   icon_emoji: config('ICON_EMOJI')
 }
 
