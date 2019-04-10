@@ -46,7 +46,6 @@ app.post('/commands/bugsbot', (req, res) => {
 
 app.listen(config('PORT'), (err) => {
   if (err) throw err
-  console.log(config('SLACK_TOKEN'), "PAYLOAD")
 
   console.log(`\n🚀  Starbot LIVES on PORT ${config('PORT')} 🚀`)
 
