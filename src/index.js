@@ -28,6 +28,8 @@ app.post('/commands/bugsbot', (req, res) => {
 
   if (!payload || payload.token !== config('SLACK_TOKEN')) {
     let err = '✋  Error Creating Webhook\n'
+    console.log(payload, "PAYLOAD")
+
     console.log(err)
     res.status(401).end(err)
     return
